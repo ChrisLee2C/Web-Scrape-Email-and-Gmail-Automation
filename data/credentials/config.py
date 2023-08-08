@@ -1,0 +1,10 @@
+PRIMARY_SCHOOL_HTML_PATH=''#file:///.../.../*.html
+SECONDARY_SCHOOL_HTML_PATH=''#file:///.../.../*.html
+PRIMARY_SCHOOL_EMAIL_PATH='data/school email/primary_school_email.csv'
+SECONDARY_SCHOOL_EMAIL_PATH='data/school email/secondary_school_email.csv'
+TOKEN_PATH='data/credentials/json/token.json'
+CREDENTIALS_PATH='data/credentials/json/credentials.json'
+MESSAGE=''
+FROM_EMAIL_ADDRESS=''#*@gmail.com.hk
+EMAIL_SUBJECT=''
+ATTACHMENT_NAME=''#data/attachments/*.pdf
