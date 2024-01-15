@@ -1,16 +1,18 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
+from data.credentials.config import DRIVER_PATH
 import pandas as pd
 
 def getDriver():
     options=webdriver.ChromeOptions()
+    options.add_argument("--headless=new")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_experimental_option("useAutomationExtension", False)
     #This is mentioned in documentation it is a must add item to prevent bugs
     options.add_argument("--disable-gpu")
-    service=ChromeService(executable_path="D:\Portal\Python\Email Automation\driver\chromedriver.exe")
+    service=ChromeService(executable_path=DRIVER_PATH)
     driver=webdriver.Chrome(service=service,options=options)
     return driver
 
